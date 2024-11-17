@@ -1,4 +1,4 @@
-﻿#!name=iyf.tv
+#!name=iyf.tv
 
 #!desc=iyf.tv去广告
 
@@ -9,5 +9,4 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bodian2.png
 
 [URL Rewrite]
-
-^https:\/\/s1-a1\.global-cdn\.me\/vod\/.+\.mp4 - reject-dict
+(^https?://(.+\.)?iyf\.tv/(.+/)?main.*\.js$) https://www.multilanes.com/remove-iyf-ads?original_url=$1 302
