@@ -3,5 +3,4 @@
 #!homepage=https://whatshub.top
 #!author=minco
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bodian2.png
-[URL Rewrite]
-^https:\/\/s1-a1\.global-cdn\.me _ reject
+[Rule]DOMAIN-SUFFIX,s1-a1.global-cdn.me,REJECT
