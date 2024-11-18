@@ -1,12 +1,5 @@
-#!name=iyf.tv
-
-#!desc=iyf.tv去广告
-
-#!homepage=https://whatshub.top
-
-#!author=minco
-
-#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bodian2.png
-
-[URL Rewrite]
-(^https?://(.+\.)?iyf\.tv/(.+/)?main.*\.js$) https://www.multilanes.com/remove-iyf-ads?original_url=$1 302
+﻿#!name=iyf.tv
+#!desc=iyf.tv去广告
+#!homepage=https://whatshub.top
+#!author=minco
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bodian2.png[URL Rewrite]^https?:\/\/s1-a1\.global-cdn\.me\/vod\/(.*?).mp4 - reject
