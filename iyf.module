@@ -2,4 +2,4 @@
 #!desc=iyf.tv去广告
 #!homepage=https://whatshub.top
 #!author=minco
-#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bodian2.png[Script]http-response ^https?://(.+\.)?iyf\.tv/(.+/)?main.*\.js$ script-response-body https://www.multilanes.com/remove-iyf-ads?original_url=$0
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bodian2.png[Script]http-response ^https?://(.+\.)?iyf\.tv/(.+/)?main.*\.js$ script-response-body var url = $response.body.match(/(https:\/\/www\.multilanes\.com\/remove-iyf-ads\?original_url=[^&]+)/);if (url) {    $response.body = url[0]; // 将匹配到的URL替换为目标URL}$done();
